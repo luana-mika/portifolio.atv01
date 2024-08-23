@@ -27,7 +27,7 @@
     --fonte-secundaria:"Montserrat", sans-serif;
 }
 /* cabeçalho */
-.cabecalho{
+/* .cabecalho{
     padding: 1.5%;
     background-color: var(--cor-clara);
     display: flex;
@@ -43,7 +43,7 @@
     font-size: 18px;
     color: var(--cor-secundaria);
     text-decoration: none; 
-}
+} */
 
 .body {
     background-color: var(--branco);
@@ -160,7 +160,7 @@ ul {
 }
 
 @media screen  and (max-width: 1023px){
-    .cabecalho{
+    /* .cabecalho{
         padding: 3%;
         align-items: center;
     }
@@ -169,7 +169,7 @@ ul {
         justify-content: space-between;
         display: flex;
         gap: 5%;
-    }
+    } */
 
     .home__conteudo{
         flex-direction: column-reverse;
