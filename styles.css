@@ -49,7 +49,8 @@
     background-color: var(--branco);
 }
 
-.home__conteudo{
+.home__conteudo,
+.about-me__conteudo{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,11 +62,13 @@
     font-size: 25px;
 }
 
-.home__texto{
+.home__texto,
+.about-me__texto{
     padding: 10px;
 }
 
-.home__texto__titulo{
+.home__texto__titulo,
+.about-me__texto__titulo{
     font-weight: 700;
     line-height: 75px;
     font-size: 60px;
@@ -74,9 +77,11 @@
 .destaque{
     color: var(--cor-primaria);
     font-size: 70px;
+    margin-bottom: 0;
 }
 
-.home__texto__texto{
+.home__texto__texto,
+.about-me__texto__texto{
     font-weight: 400;
     font-size: 25px;
     line-height: 35px;
@@ -113,7 +118,8 @@
     width:  190px;
 }
 
-.home__imagem{
+.home__imagem,
+.about-me__imagem{
     width: 50%;
 }
 
@@ -159,6 +165,133 @@ ul {
     margin-bottom: 0;
 }
 
+/* about me */
+.about-me__subtitulo{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* portifolio */
+.portifoliio__texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 50px 0;
+    padding: 0 10% 0 10%;
+}
+
+.portifolio__titulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.portifolio__subtitulo{
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+}
+
+.destaque__portifolio{
+    color: var(--cor-primaria);
+}
+
+/* habilidades */
+.container__habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.habilidades{
+    margin: 50px 0 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habilidades__titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 60px;
+}
+
+.habilidades__imagem{
+    width: 300px;
+    padding: 15px 0 0 0 ;
+}
+
+.habilidades__nome{
+    font-family: var(--fonte-secundaria);
+    font-size: 20px;
+}
+
+.habilidades__barras{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.progress-bar{
+    color: var(--cor-primaria);
+}
+.esquerda{
+    padding: 0 0 55px 0;
+}
+
+.direita{
+    padding: 0 0 55px 0;
+}
+
+/* contato */
+.contato{
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 5%;
+    font-family: var(--fonte-secundaria);
+}
+
+.contato__texto{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.contato__titulo{
+    color: var(--cor-clara);
+    font-family: var(--fonte-primaria);
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: 45px;
+}
+
+.contato__subtitulo{
+    color: var(--cor-clara);
+    margin-bottom: 0;
+    font-size: 16px;
+    
+}
+
+.contato__input{
+    width: 50%;
+    font-family: var(--fonte-secundaria);
+    padding: .5em;
+    border: 1px solid var(--cor-clara);
+    border-radius: 24px;
+    color: var(--cor-secundaria);
+    padding-left: 1.5em;
+}
+
+.mensagem{
+    height: 150px;
+}
+
+.rodape__contato{
+    background-color: var(--branco);
+}
+.subtitulo__contato{
+    color: var(--cor-primaria);
+}
+
 @media screen  and (max-width: 1023px){
     /* .cabecalho{
         padding: 3%;
@@ -171,13 +304,15 @@ ul {
         gap: 5%;
     } */
 
-    .home__conteudo{
+    .home__conteudo,
+    .about-me__conteudo{
         flex-direction: column-reverse;
         padding: 5%;
         gap: 0;
     }
 
-    .home__texto{
+    .home__texto,
+    .about-me__texto{
         width: auto;
         text-align: center;
     }
@@ -196,11 +331,25 @@ ul {
 }
 
 @media screen and (max-width: 767px){
-    .cabelcalho__menu__link{
+    /* .cabelcalho__menu__link{
         font-size: 80%;
-    }
+    } */
 
     .rodape{
         padding: 7%;
+    }
+
+    /* habilidades */
+    .habilidades{
+        text-align: center;
+    }
+
+    .habilidades__barras{
+        padding: 5%;
+    }
+
+    /* contato */
+    .contato__input{
+        width: 75%;
     }
 }
